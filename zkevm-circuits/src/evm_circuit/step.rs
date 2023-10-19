@@ -34,7 +34,7 @@ use strum_macros::EnumIter;
 
 #[allow(missing_docs, reason = "some docs here are tedious and not helpful")]
 #[allow(non_camel_case_types)]
-#[derive(Clone, Copy, Debug, PartialEq, Eq, Hash, EnumIter)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq, Hash, EnumIter, ConstParamTy)]
 /// All the possible execution states that the computation of EVM can arrive.
 /// Some states are shared by multiple opcodes.
 pub enum ExecutionState {
